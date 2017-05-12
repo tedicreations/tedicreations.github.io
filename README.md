@@ -1,2 +1,2 @@
-# TediCreations.github.io.
+# TediCreations.github.io
 TediCreations personal webpage

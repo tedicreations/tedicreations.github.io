@@ -46,37 +46,52 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Welcome to <a href="https://tedicreations.github.io/" target="new"><strong>TediCreations</strong></a>
-                    </h2>
+                    <h2 class="intro-text text-center">Insert project</h2>
                     <hr>
-                    <img class="img-responsive img-left" src="../img/ic.png" alt="">
-                    <form action="/action_page.php">
+                    <form action="../php/insertDB.php">
                         Name:
                         <br>
-                        <input type="text" name="name" value="Mickey">
+                        <input type="text" name="name" value="">
                         <br> Description:
                         <br>
-                        <input type="text" name="description" value="Mouse">
-                        <br> Date:
+                        <input type="text" name="description" value="">
+                        <br> Image:
                         <br>
-                        <input type="text" name="date" value="Yesterday">
+                        <input type="text" name="image" value="">
                         <br>
                         <br><input type="submit" value="Insert">
                     </form>
-
-                    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
                 </div>
             </div>
         </div>
 
 
-        <?php
-            $db = new SQLite3('../db/projects.db');
-            
-            $db->exec('INSERT INTO project (Name, Date, Description, Photo) VALUES ("John Doe","Yesterday","Manager","http://allenbukoff.com/newwavepsychology/JohnDoeMasthead.jpg")');
-            echo "Row inserted \n";
-        ?>
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Contact form</h2>
+                    <hr>
+                    <form method="POST" action="http://formspree.io/hkanelhs@yahoo.gr">
+                        <br> Email:
+                        <br>
+                        <input name="email" placeholder="Your email" type="email">
+                        <br> Name:
+                        <br>
+                        <input name="Name" placeholder="Your name" type="name">
+                        <br> Message:
+                        <br>
+                        <textarea name="message" placeholder="Your message"></textarea>
+                        <br>
+                        <button type="submit">Send</button>
+                    </form>
 
+                </div>
+            </div>
+
+
+
+        </div>
 
     </div>
     <!-- /.container -->

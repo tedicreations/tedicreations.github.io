@@ -150,6 +150,39 @@
 			</div>
 		</div>
 
+
+
+		<div class="row">
+			<div class="box">
+				<div class="col-lg-12">
+					<hr>
+					<h2 class="intro-text text-center">Setup remote git and make initial push</h2>
+					<hr>
+					<hr class="visible-xs">
+
+					<p>Remote repository:</p>
+					<pre class="brush: bash;">
+						ssh git@example.com
+						mkdir my_project.git
+						cd my_project.git
+						git init --bare
+					</pre>
+					<p>Local repository:</p>
+					<pre class="brush: bash;">
+						cd my_project
+						git init
+						git add *
+						git commit -m "Initial commit"
+						git remote add origin example.com:my_project.git
+						git push -u origin master
+					</pre>
+				</div>
+			</div>
+		</div>
+
+
+
+
 	</div>
 	<!-- /.container -->
 
